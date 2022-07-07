@@ -11,6 +11,7 @@ body {
 
 h1 {
   font-size: 3.5rem;
+  text-align: start
 }
 ​
 h2 {
@@ -21,3 +22,22 @@ h3 {
   font-size: 2rem;
   margin-bottom: 5px;
 }
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+/* ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+ */
