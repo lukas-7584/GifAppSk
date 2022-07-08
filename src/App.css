@@ -56,6 +56,20 @@ input {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.card p {
+  background-color: white;
+  flex: 1;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  padding: 5px 20px 0px 20px;
+  text-align: center;
+}
+​
+.card img {
+  width: 100%;
+  max-height: 250px;  
+}
 /* ul{
   display: flex;
   flex-direction: row;
