@@ -22,8 +22,16 @@ export const AddCategory = ( {addCategory} ) => {
 
     return (
 
-        <form onSubmit={handleSubmit}>
-                    <input placeholder='Buscar Gif' type='text' value={inputValue}  onChange={handleInpuntChange}/>       
+        <form onSubmit={handleSubmit} >
+                    <input placeholder='Buscar Gif' type='text' value={inputValue}  onChange={handleInpuntChange}/>  
+                    <button type="submit" className='bton'>
+                            <div style={{display: "flex"}}>
+                                
+                                <img src="https://giphy.com/static/img/search-icon.svg" className='picture' />
+                                
+                            </div>
+    
+                    </button>      
     </form>
 
     )}
