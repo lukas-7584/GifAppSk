@@ -1,12 +1,11 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
- 
-
 }
 
 
 body {
-  padding: 60px;
+ 
+  margin-top: 0px;
   background-image:linear-gradient(272deg, #fa4ba2, rgb(204, 3, 204) 50%, #9853c4)
 }
 
@@ -14,7 +13,7 @@ h1 {
   font-size: 3.5rem;
   text-align: center;
   color: white;
-  margin-right: -150px;
+
 }
 ​
 h2 {
@@ -25,9 +24,11 @@ h3 {
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
+imgLogo{
+  width: 2rem;
+}
 .titulo{
-  padding: 5px;
+  /* padding: 5px; */
   border-radius: 15%;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjMd9MzkMyL0aX0JNSOvd2vsjCL654dDp_dqxRERcGPtLUNYkh92BMnUhBdIBzsBpKeE&usqp=CAU);
   background-repeat: no-repeat;
@@ -36,7 +37,6 @@ h3 {
 }
 
 input {
-  color: black;
   border-radius: 15px;
   border: 1px solid rgb(97, 32, 158);
   color: black;
@@ -51,6 +51,7 @@ input {
 .card{
   justify-content: center;
   margin-right: 20px;
+  margin-bottom: 15px;
 }
 
 .card-grid{
@@ -74,20 +75,9 @@ input {
   max-height: 250px;  
 }
 
-
-ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  color: white;
-  background-color: #0c0c0c;
+.navTitulo{
+  font-size: 1.5rem;
 }
-
-.nav{
-  background-color: aqua;
-}
-
 
 form{
   width: 100%;

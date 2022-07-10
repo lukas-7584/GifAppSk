@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import './App.css';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
-
+import {BrowserRouter as Router, swich, Route} from 'react-router-dom'
+import NavBar from './components/navBar';
 
 function App() {
 
@@ -26,10 +27,14 @@ function App() {
   return (
     <>
         {/* Titulo---------- */} 
+        
 
+      <Router>
+        <NavBar/>
+      </Router>
       
         
-        <div className='titulo'>
+        <div className='titulo container'>
 
           
               <h1>GIFAPP</h1>
