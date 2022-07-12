@@ -22,7 +22,7 @@ export const AddCategory = ( {addCategory} ) => {
 
     return (
 
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} className="container" >
                     <input placeholder='Buscar Gif' type='text' value={inputValue}  onChange={handleInpuntChange}/>  
                     <button type="submit" className='bton'>
                             <div style={{display: "flex"}}>
