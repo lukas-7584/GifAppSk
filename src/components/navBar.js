@@ -29,12 +29,12 @@ const NavBar = () => {
                     </Link>
                 </li>
                 <li className="nav-item navTitulo">
-                    <Link className="nav-link" to='/GitHub'>
+                    <Link className="nav-link" to='/Repo'>
                     Repositories GitHub
                     </Link>
                 </li>
                 <li className="nav-item navTitulo">
-                    <Link className="nav-link" to='/contacto'>
+                    <Link className="nav-link" to='/Contacto'>
                         Contacto
                     </Link>
                 </li>
