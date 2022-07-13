@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Modal, ModalContent } from "./Modal";
-import {ProtyTypes }from "prop-types"
+import {PropTypes }from "prop-types"
 
 export const GifItem = ({title, url}) => {
 
@@ -13,7 +13,7 @@ export const GifItem = ({title, url}) => {
         <Modal onOpen={showModal}>
             <div className="card">
                 <img src={url} alt="gif"/>
-                <p>{title}</p>
+                <p data-testid="test-title">{title}</p>
             </div>
         </Modal>
         { isOpen && 
@@ -27,12 +27,7 @@ export const GifItem = ({title, url}) => {
         </>
     )
 }
-GifItem.protoType ={
-    title: ProtyTypes.strng.isRequired,
-    url: ProtyTypes.strng
-}
-
-GifItem.desfaultprops = {
-    title: 'Gif',
-    url:'...'
+GifItem.propTypes ={
+    title:  PropTypes.string.isRequired,  
+    url:    PropTypes.string.isRequired,
 }
