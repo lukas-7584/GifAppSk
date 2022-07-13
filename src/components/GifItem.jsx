@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Modal, ModalContent } from "./Modal";
+import {ProtyTypes }from "prop-types"
 
 export const GifItem = ({title, url}) => {
 
@@ -25,4 +26,13 @@ export const GifItem = ({title, url}) => {
 
         </>
     )
+}
+GifItem.protoType ={
+    title: ProtyTypes.strng.isRequired,
+    url: ProtyTypes.strng
+}
+
+GifItem.desfaultprops = {
+    title: 'Gif',
+    url:'...'
 }
