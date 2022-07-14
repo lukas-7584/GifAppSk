@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import  {PropTypes }from 'prop-types'
 export const AddCategory = ( {addCategory} ) => {
     
     const [inputValue, setInputValue] = useState('');
@@ -22,7 +22,7 @@ export const AddCategory = ( {addCategory} ) => {
 
     return (
 
-        <form onSubmit={handleSubmit} className="container" >
+        <form onSubmit={handleSubmit} className="container" aria-label='form' >
                     <input placeholder='Buscar Gif' type='text' value={inputValue}  onChange={handleInpuntChange}/>  
                     <button type="submit" className='bton'>
                             <div style={{display: "flex"}}>
@@ -35,3 +35,8 @@ export const AddCategory = ( {addCategory} ) => {
     </form>
 
     )}
+
+
+    AddCategory.propType = {
+        addCategory: PropTypes.func.isRequired
+    }
