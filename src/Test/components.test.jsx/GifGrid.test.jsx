@@ -14,7 +14,7 @@ describe('Test en <GifGrid/>', () => {
         imagenes: [ ],
         loading : true
     })
- 
+
     render(<GifGrid  category={category} /> )
     
     expect( screen.getByText( 'CARGANDO...' ).innerHTML ).toBe( 'CARGANDO...' )

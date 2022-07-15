@@ -24,7 +24,9 @@ describe('test en <GifItem/>', () => {
 
         test('Debe encontrar por test-id', () => {
 
-            const {getByTestId} = render(<GifItem title={title} url={url}/>);
+            render(<GifItem title={title} url={url}/>);
+
+            const {getByTestId} = screen 
 
             expect(getByTestId('test-title').innerHTML).toContain(title);
 
@@ -41,7 +43,6 @@ describe('test en <GifItem/>', () => {
 
     expect(src).toContain(url);
     expect(alt).toContain('gif');
-
 
     })
 
