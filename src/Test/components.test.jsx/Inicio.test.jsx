@@ -16,15 +16,16 @@ describe('Test en <Inicio/>', () => {
 
         test('Test de categories', () => {
 
-            const {result} = renderHook( () => Inicio());
+
+            // const {result} = renderHook( () => Inicio());
     
-            console.log(result);
+            // console.log(result);
     
-            const {categories} = result.current;
+            // const {categories} = result.current;
     
-            console.log(categories);
+            // console.log(categories);
     
-            expect.arrayContaining (categories)
+            // expect.arrayContaining (categories)
 
         });
     
