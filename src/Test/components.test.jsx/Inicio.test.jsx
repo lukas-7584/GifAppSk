@@ -25,8 +25,7 @@ describe('Test en <Inicio/>', () => {
             console.log(categories);
     
             expect.arrayContaining (categories)
-    
-            expect([categories].ToEqualq(categories))
+
         });
     
 
