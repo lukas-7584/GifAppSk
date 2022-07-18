@@ -7,34 +7,49 @@ import Inicio from '../../components/Inicio';
 
 describe('Test en <Inicio/>', () => { 
 
-    test('render content', () => { 
+    test('Comprobrando esta inicial', () => { 
         render (<Inicio/>)
 
-        expect(screen.getByRole('heading') ).toHaveTextContent('GIFAPP');
+        const  h3 = screen.queryByRole('heading',{level: 3})
+
+        expect(h3).toBeNull()
+
+            screen.debug()
 
         })
 
         // Verificar si cambia el estado de  categorias
 
-        test('Test   verificar el estado de categories', () => {
+
+        test('Cambios estado categorias', () => { 
+
+            render (<Inicio/>)
+
+            const input = screen.getByRole('textbox')
+
+            const form = screen.getByRole('form')
+
+            fireEvent.change(input, { target: { value: 'Dragon Ball' } })
+
+            fireEvent.submit(form)
+
+            screen.debug()
+
+            const  h3 = screen.queryByRole('heading',{level: 3})
+
+            expect(h3).toBeTruthy()
+
+            })
 
 
-            // const {result} = renderHook( () => Inicio());
-    
-            // console.log(result);
-    
-            // const {categories} = result.current;
-    
-            // console.log(categories);
-    
-            // expect.arrayContaining (categories)
 
-        });
-    
+            test('Should render Reset button', ()=>{
 
-        // Testear funcionalidades de creadas enel TP 1, reset y eliminar categoria
+                
 
-
+                
+            })
+            
 
 
 

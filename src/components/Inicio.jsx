@@ -41,7 +41,7 @@ const Inicio = () => {
 <button className="reset" onClick={handleRemoveAll}>Reset</button> 
 
 {categories.map((category) => (
-<><button className="delete" onClick={handleOnRemove}>ELIMINAR</button><GifGrid className="categories" key={category} category={category}/></>
+<><button className="delete" onClick={handleOnRemove} type="submit">ELIMINAR</button><GifGrid className="categories" key={category} category={category}/></>
 // <GifGrid key={category} category={category} />
 ))}
 
