@@ -14,7 +14,9 @@ describe('Test en <Inicio/>', () => {
 
         })
 
-        test('Test de categories', () => {
+        // Verificar si cambia el estado de  categorias
+
+        test('Test   verificar el estado de categories', () => {
 
 
             // const {result} = renderHook( () => Inicio());
@@ -29,6 +31,10 @@ describe('Test en <Inicio/>', () => {
 
         });
     
+
+        // Testear funcionalidades de creadas enel TP 1, reset y eliminar categoria
+
+
 
 
 
