@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState } from 'react';
-import{ render, screen, fireEvent, renderHook} from '@testing-library/react';
+import{ render, screen, fireEvent} from '@testing-library/react';
+
+
 
 import Inicio from '../../components/Inicio';
 
@@ -41,11 +42,22 @@ describe('Test en <Inicio/>', () => {
 
             })
 
+            // Renderizado de los botones  Eliminar  y Reset!!
 
 
-            test('Should render Reset button', ()=>{
+            test('Debe renderizar  los bontones Eliminar y Reset', ()=>{
 
-                
+                const {getByTestId} = render(<Inicio />)
+
+            const buttonR = getByTestId('reset')
+            const buttonD = getByTestId('eliminar')
+
+        fireEvent.click(buttonR)
+        fireEvent.click(buttonD)
+
+
+        expect(buttonR).toBeTruthy()
+
 
                 
             })

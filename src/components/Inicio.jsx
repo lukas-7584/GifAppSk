@@ -38,10 +38,11 @@ const Inicio = () => {
 
 
 {/* Listado---------- */}
-<button className="reset" onClick={handleRemoveAll}>Reset</button> 
+<button className="reset" onClick={handleRemoveAll} data-testid="reset">RESET</button> 
+<button className="delete" onClick={handleOnRemove} data-testid="eliminar">ELIMINAR BUSQUEDA </button>
 
 {categories.map((category) => (
-<><button className="delete" onClick={handleOnRemove} type="submit">ELIMINAR</button><GifGrid className="categories" key={category} category={category}/></>
+<><GifGrid className="categories" key={category} category={category}/></>
 // <GifGrid key={category} category={category} />
 ))}
 
